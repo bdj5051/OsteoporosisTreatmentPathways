@@ -110,7 +110,7 @@ runPathwayAnalysis <- function(connectionDetails,
                                            cohortTable = cohortTable)
   DatabaseConnector::executeSql(connection = connection, sql = sql, progressBar = TRUE)
 
-  base.sql <- "select * from @cohortDatabaseSchema.@cohortTable_PRESCRIPTION_EVENTS where line = 0;"
+  base.sql <- "select * from @cohortDatabaseSchema.@cohortTable_PRESCRIPTION_EVENTS;"
   base.sql <- SqlRender::render(sql = base.sql,
                                 cohortDatabaseSchema=cohortDatabaseSchema,
                                 cohortTable=cohortTable)

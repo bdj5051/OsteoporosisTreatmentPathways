@@ -16,7 +16,7 @@ options(andromedaTempFolder = "s:/andromeda")
                                                                  user = NULL,
                                                                  password = NULL,
                                                                  port = Sys.getenv("PDW_PORT"))
- 
+ renv
 # The name of the database schema where the CDM data can be found:
 cdmDatabaseSchema <- "CDM_IBM_MDCD_V1153.dbo"
  

@@ -15,8 +15,6 @@ FROM (
 			SELECT 1002 AS cohort_definition_id, 3 AS cohort_index 
 			UNION ALL 
 			SELECT 1001 AS cohort_definition_id, 4 AS cohort_index 
-			UNION ALL 
-			SELECT 1006 AS cohort_definition_id, 5 AS cohort_index 
 			) ec 
 	  ON e.cohort_definition_id = ec.cohort_definition_id
 	  JOIN @cohortDatabaseSchema.@cohortTable t ON t.cohort_start_date <= e.cohort_start_date AND e.cohort_start_date <= t.cohort_end_date AND t.subject_id = e.subject_id
