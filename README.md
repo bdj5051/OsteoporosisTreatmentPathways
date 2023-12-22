@@ -6,7 +6,7 @@ Osteoporosis Treatment Pathways Analysis
 - Analytics use case(s): **Characterization**
 - Study type: **Clinical Application**
 - Tags: **Osteoporosis, TreatmentPathways**
-- Study lead: **Seng Chan You, Dajeong Bu**
+- Study lead: **Seng Chan You, Dajeong Boo**
 - Study lead forums tag: **[SCYou](https://forums.ohdsi.org/u/scyou/)**
 - Study start date: 2023-03-08
 - Study end date: 
@@ -21,7 +21,7 @@ How to run
 ==========
 1. Follow [these instructions](https://ohdsi.github.io/Hades/rSetup.html) for seting up your R environment, including RTools and Java.
 
-   **R version 4.2 is required to run this package.**
+   **R version 4.1.3 is required to run this package.**
 
 2. Open your study package in RStudio. Use the following code to install all the dependencies:
    
